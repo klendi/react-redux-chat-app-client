@@ -1,3 +1,5 @@
+/* @import url('https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/algolia-min.css'); */
+
 #root {
   height: 100%;
 }
@@ -300,4 +302,16 @@ body {
 
 .d-flex {
   display: flex;
+}
+
+.search-input {
+  position: relative;
+  width: 97%;
+  padding: 1rem;
+  background: #484c52;
+  color: #cecdcf;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: 0;
 }

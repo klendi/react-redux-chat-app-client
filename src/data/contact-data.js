@@ -18,12 +18,12 @@ export const user = {
         {
           //means this message it's sent by others, not the user that logged in rn
           isThisUser: false,
-          content: 'Vesh Derr',
+          content: 'Hello',
           sentOn: new Date()
         },
         {
           isThisUser: false,
-          content: 'Everything good, what about you ?',
+          content: 'How you doing?',
           sentOn: new Date()
         },
         {

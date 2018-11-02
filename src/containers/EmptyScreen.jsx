@@ -1,7 +1,8 @@
 import React from 'react'
 import store from '../store'
+import { InstantSearch } from 'react-instantsearch-dom'
 
-export default () => {
+export default props => {
   const { name, lastName, pic, status, contacts } = store.getState().users.user
   return (
     <div className="empty">
@@ -11,7 +12,12 @@ export default () => {
         <div className={'status-emptyscreen ' + status} />
       </div>
       <br />
-      <button className="empty-btn">Search Contacts</button>
+      <button
+        className="empty-btn"
+        onClick={() => props.history.push('/search')}
+      >
+        Search Contacts
+      </button>
       <p className="empty-info">
         Search for someone to start chatting with or go to Contacts to see who
         is available

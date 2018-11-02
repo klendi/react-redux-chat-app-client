@@ -34,6 +34,7 @@ export default class MessageInput extends React.Component {
     if (this.props.notUser) {
       store.dispatch(addMessage({ text, hisID, ourID, senderIsOurUser: false }))
     } else {
+      if (text === '') return
       store.dispatch(addMessage({ text, hisID, ourID, senderIsOurUser: true }))
     }
     this.setState({ inputValue: '' })
